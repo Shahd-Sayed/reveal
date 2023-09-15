@@ -1,0 +1,230 @@
+:root {
+    --main_color: #ffffff;
+    --text-color: #06526b;
+    --secondary_color: #076d8f;
+    --light_color: #011820;
+    --hover_color: #205769;
+    --text_light_color: #808080;
+    --yello-color: #f1ef0b;
+    --red-color: #fe1a4d;
+}
+
+@media screen and (max-width:767px) {
+    body {
+        min-height: calc(100vh + 1800px) !important;
+
+    }
+
+}
+
+@media screen and (min-width:767px) and (max-width:1023px) {
+    .navbar {
+        width: 1200px !important;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .navbar {
+        width: 1200px !important;
+    }
+
+}
+@media screen and (min-width:1024px) {
+    .navbar {
+        width: 1800px !important;
+    }
+    
+}
+.landing {
+    position: relative;
+
+}
+
+.landing::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 80vh;
+    opacity: 20%;
+}
+
+@media screen and (min-width:767px) and (max-width:1023px) {
+    .landing::before {
+        width: 1200px;
+        height: 70vh;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .landing::before {
+        display: none;
+    }
+
+}
+@media screen and (min-width:1024px) {
+    .landing::before {
+        height: 70vh;
+        
+    }
+
+    
+}
+
+.landing img {
+    width: 650px;
+    position: absolute;
+    top: 130px !important;
+    left: 60% !important;
+    border-radius: 12px;
+    border-bottom-left-radius: none !important;
+    /* box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.1); */
+    opacity: 70% !important;
+    transition: 1s;
+}
+
+@media screen and (min-width:767px) and (max-width:1023px) {
+    .landing img {
+        width: 520px;
+        height: 330px !important;
+        top: 220px !important;
+        left: 85% !important;
+
+    }
+}
+
+@media screen and (max-width:767px) {
+    .landing img {
+        width: 550px;
+        height: 400px !important;
+        left: 600px !important;
+        top: 220px !important;
+
+    }
+}
+
+
+.landing img:hover {
+    scale: 1.2;
+    transition-timing-function: ease-in-out;
+}
+
+.landing .name {
+    color: #ffffff;
+    position: absolute;
+    top: 80px;
+    left: 10%;
+    font-size: 80px;
+}
+
+@media screen and (max-width:767px) {
+    .landing .name {
+        top: 100px;
+
+        font-size: 58px;
+    }
+}
+
+.landing p {
+    color: var(--yello-color);
+    position: absolute;
+    top: 200px;
+    left: 10%;
+    font-size: 20px;
+    word-break: break-all;
+
+}
+
+.landing .third {
+    color: #ffffff;
+    position: absolute;
+    top: 250px;
+    left: 10%;
+    font-size: 20px;
+}
+
+.landing .second {
+    /* word-break: break-all; */
+    width: 900px;
+    border: 1px solid transparent;
+    color: #ffffff;
+    position: absolute;
+    top: 300px;
+    left: 10%;
+    font-size: 22px;
+    line-height: 3em;
+}
+
+@media screen and (min-width:767px) and (max-width:1023px) {
+    .landing .second {
+        width: 520px;
+    }
+}
+@media screen and (max-width:767px) {
+    .landing .second {
+width: 500px;
+    }
+}
+.landingT .main_img {
+    width: 650px;
+    position: absolute;
+    top: 900px !important;
+    left: 31% !important;
+    border-radius: 12px;
+    border-bottom-left-radius: none !important;
+    box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.1);
+    opacity: 70% !important;
+    transition: 1s;
+}
+
+/* @media screen and (min-width:767px) {
+    .landingT .main_img {
+
+        left: 38% !important;
+
+    }
+}
+@media screen and (max-width:767px) {
+    .landingT .main_img {
+        top: 1000px !important;
+        left: 300px !important;
+
+    }
+} */
+
+
+.landingT .main_img:hover {
+    scale: 1.2;
+    transition-timing-function: ease-in-out;
+}
+
+.landingT p {
+    position: absolute;
+    top: 1410px !important;
+    left: 2% !important;
+    color: #ffffff;
+    word-spacing: 0.5em;
+    font-size: 25px;
+    line-height: 2em;
+
+}
+/* 
+@media screen and (min-width:767px) {
+    .landingT p {
+        text-align: right !important;
+        right: -400px !important;
+
+    }
+}
+@media screen and (max-width:767px) {
+    .landingT p {
+        top: 1520px !important;
+        text-align: right !important;
+        right: -800px !important;
+    line-height: 2.7em;
+    font-size: 35px;
+
+
+
+    }
+} */

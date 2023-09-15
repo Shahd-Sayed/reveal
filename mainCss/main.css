@@ -1,0 +1,57 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+}
+
+:root {
+    --main_color: #ffffff;
+    --text-color: #06526b;
+    --secondary_color: #076d8f;
+    --light_color: #011820;
+    --hover_color: #205769;
+    --text_light_color: #808080;
+    --yello-color: #f1ef0b;
+    --red-color: #fe1a4d;
+}
+
+body {
+    font-family: "Oxygen", sans-serif;
+    background-image: url(../background/photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height:calc(100vh + 900px) !important;
+}
+
+.navbar {
+    background-color: transparent !important;
+    opacity: 100% !important;
+}
+
+.navbar-brand {
+    font-size: 55px;
+    font-weight: bold;
+    color: var(--main_color) !important;
+    transition: 0.3s;
+    font-family: "Princess Sofia", cursive !important;
+}
+
+.navbar-brand:hover {
+    color: var(--red-color) !important;
+    font-weight: normal !important;
+}
+
+.nav-link {
+    color: var(--main_color) !important;
+    font-size: 30px !important;
+    font-weight: 600 !important;
+    padding-left: 29px !important;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--red-color) !important;
+}

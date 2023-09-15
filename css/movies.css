@@ -1,0 +1,54 @@
+.main_card {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  transition: 1s;
+}
+
+.card {
+  width: 280px;
+  height: 280px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  border-color: var(--secondary_color);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  transition: filter 0.3s ease-in-out;
+}
+
+.card .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to bottom, #c81038, #11364f);
+  color: white;
+  padding: 20px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.card .overlay .name {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.card:hover img {
+  filter: blur(1px) grayscale(60%);
+}
+
+.card:hover .overlay {
+  transform: translateY(0);
+}
+.checked {
+  color: orange;
+}
+.like {
+  margin-left: 130px;
+}
